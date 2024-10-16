@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Sky Website</title>
+    <style>
+        /* Basic body styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Main container for each section */
+        .section {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Full screen height for each section */
+        }
+
+        /* Background sky image settings */
+        .parallax {
+            background-image: url('clouds.jpg'); /* The image of the clouds */
+            min-height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Section content styling */
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+
+        /* Different background colors for each section */
+        .section-1 {
+            background: rgba(135,206,235, 0.8); /* Light blue, sky color */
+        }
+        .section-2 {
+            background: rgba(70,130,180, 0.8); /* Steel blue, deeper sky color */
+        }
+        .section-3 {
+            background: rgba(30,144,255, 0.8); /* Dodger blue, evening sky color */
+        }
+        .section-4 {
+            background: rgba(25,25,112, 0.8); /* Midnight blue, night sky */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section section-1 parallax">
+        <div class="content">
+            <h1>Morning Sky</h1>
+            <p>The beginning of a beautiful day</p>
+        </div>
+    </div>
+
+    <div class="section section-2">
+        <div class="content">
+            <h1>Afternoon Sky</h1>
+            <p>The sun is high, and the sky is vibrant</p>
+        </div>
+    </div>
+
+    <div class="section section-3">
+        <div class="content">
+            <h1>Evening Sky</h1>
+            <p>The sun begins to set, casting rich colors</p>
+        </div>
+    </div>
+
+    <div class="section section-4">
+        <div class="content">
+            <h1>Night Sky</h1>
+            <p>The stars are out, and the sky is dark</p>
+        </div>
+    </div>
+
+</body>
+</html>
