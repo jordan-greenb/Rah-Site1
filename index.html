@@ -24,8 +24,8 @@
         /* Background sky image settings */
         .parallax {
             background-image: url('clouds.jpg'); /* The image of the clouds */
-            min-height: 100%;
-            background-attachment: fixed;
+            height: 100%; /* Make sure the background covers the full height */
+            background-attachment: fixed; /* Fixed background for scrolling effect */
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -40,51 +40,38 @@
             color: white;
             text-align: center;
         }
-
-        /* Different background colors for each section */
-        .section-1 {
-            background: rgba(135,206,235, 0.8); /* Light blue, sky color */
-        }
-        .section-2 {
-            background: rgba(70,130,180, 0.8); /* Steel blue, deeper sky color */
-        }
-        .section-3 {
-            background: rgba(30,144,255, 0.8); /* Dodger blue, evening sky color */
-        }
-        .section-4 {
-            background: rgba(25,25,112, 0.8); /* Midnight blue, night sky */
-        }
     </style>
 </head>
 <body>
 
-    <div class="section section-1 parallax">
+    <div class="section parallax">
         <div class="content">
-            <h1>Morning Sky</h1>
-            <p>The beginning of a beautiful day</p>
+            <h1>Welcome to the Sky</h1>
+            <p>Experience the beauty of the sky as you scroll down.</p>
         </div>
     </div>
 
-    <div class="section section-2">
+    <div class="section parallax">
         <div class="content">
-            <h1>Afternoon Sky</h1>
-            <p>The sun is high, and the sky is vibrant</p>
+            <h1>Keep Scrolling</h1>
+            <p>The sky is always changing!</p>
         </div>
     </div>
 
-    <div class="section section-3">
+    <div class="section parallax">
         <div class="content">
-            <h1>Evening Sky</h1>
-            <p>The sun begins to set, casting rich colors</p>
+            <h1>Enjoy the View</h1>
+            <p>Feel free to relax and take it all in.</p>
         </div>
     </div>
 
-    <div class="section section-4">
+    <div class="section parallax">
         <div class="content">
-            <h1>Night Sky</h1>
-            <p>The stars are out, and the sky is dark</p>
+            <h1>Thank You for Visiting!</h1>
+            <p>Hope you enjoyed the sky experience.</p>
         </div>
     </div>
 
 </body>
 </html>
+
